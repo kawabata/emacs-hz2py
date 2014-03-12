@@ -71,8 +71,8 @@ With prefix ARG, it will attach pinyin to hanzi."
         (let* ((char (string-to-char (match-string 0)))
                (py (hz2py-string char)))
           (when py
-            (if (null arg) (delete-char -1)))
-          (insert py))))))
+            (if (null arg) (delete-char -1))
+            (insert py)))))))
 
 (provide 'hz2py)
 
